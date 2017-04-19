@@ -22,6 +22,9 @@ class TestGame < MiniTest::Test
   #   @game.add_player(@player1)
   #   assert_equal([@player1], @game.players)
   # end
+  def test_start_game_populates_index_array
+    assert_equal(2, @game.players_index_position.count)
+  end
 
   def test_add_multiple_player
     # @game.add_player(@player1)
@@ -33,14 +36,18 @@ class TestGame < MiniTest::Test
     assert_equal(@player1, @game.next_player)
   end
   #
-  # def test_next_player_two_turns
-  #   @game.next_player
-  #   assert_equal(@player2, @game.next_player)
-  # end
-
-  def test_start_game_populates_index_array
-    assert_equal(2, @game.players_index_position.count)
+  def test_next_player_two_turns
+    @game.next_player
+    assert_equal(@player2, @game.next_player)
   end
+
+  def text_next_player_three_turns
+    @game.next_player
+    @game.next_player
+    assert_equal(@player1, @game.next_player)
+  end
+
+
 
 
 end
