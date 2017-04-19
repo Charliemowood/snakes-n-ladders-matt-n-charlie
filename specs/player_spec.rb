@@ -9,8 +9,10 @@ class TestPlayer < MiniTest::Test
     @game = Game.new()
     @player1 = Player.new("Charlie")
     @player2 = Player.new("Matt")
+    @player3 = Player.new("Craig")
     @game.add_player(@player1)
     @game.add_player(@player2)
+    @game.add_player(@player3)
     @game.start_game
   end
 
@@ -34,28 +36,125 @@ class TestPlayer < MiniTest::Test
   #   assert_equal(10, @player1.location)
   # end
   #
+  #
+  # def test_win_condition_location_100
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   assert_equal("#{@player1.name} wins!", @player1.move(@game.board))
+  # end
 
-  def test_win_condition_location_11
+
+  # def test_ladder_at_5
+  #   (@game.next_player).move(@game.board)
+  #   assert_equal(7, @player1.location)
+  # end
+  #
+  # def test_snake_at_12
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   (@game.next_player).move(@game.board)
+  #   assert_equal(9, @player1.location)
+  #
+  # end
+
+  def test_games_run
     (@game.next_player).move(@game.board)
     (@game.next_player).move(@game.board)
     (@game.next_player).move(@game.board)
     (@game.next_player).move(@game.board)
     (@game.next_player).move(@game.board)
-    assert_equal("#{@player1.name} wins!", @player1.move(@game.board))
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
+    (@game.next_player).move(@game.board)
   end
-
-
-  def test_ladder_at_5
-    (@game.next_player).move(@game.board)
-    assert_equal(7, @player1.location)
-  end
-
-  def test_snake_at_12
-    (@game.next_player).move(@game.board)
-    (@game.next_player).move(@game.board)
-    (@game.next_player).move(@game.board)
-    assert_equal(9, @player1.location)
-
-  end
-
 end

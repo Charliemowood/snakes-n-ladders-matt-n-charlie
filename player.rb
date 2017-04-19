@@ -18,14 +18,15 @@ class Player
   # end
 
   def move(board)
-    finish_line = 11
+    finish_line = 100
 
-    # d6 = [1,2,3,4,5,6]
+    d6 = [1,2,3,4,5,6]
     # d6.shuffle.first  <-- replace 5 below with this
-    @location += 5
+    @location += d6.shuffle.first
     if board.has_key?(@location) == true
       @location += board[@location]
     end
+
     return "#{@name} wins!" if @location >= finish_line
 
 
