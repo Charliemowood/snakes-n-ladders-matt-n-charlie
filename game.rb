@@ -1,10 +1,15 @@
 class Game
 
-  attr_reader :players, :players_index_position
+  attr_reader :players, :players_index_position, :board
 
   def initialize
     @players = []
     @players_index_position = []
+
+    @board = {
+      5 => 2,
+      12 => -3
+    }
 
   end
 

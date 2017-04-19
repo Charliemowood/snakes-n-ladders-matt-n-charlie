@@ -47,7 +47,7 @@ class TestGame < MiniTest::Test
     assert_equal(@player1, @game.next_player)
   end
 
-
+  
 
 
 end
